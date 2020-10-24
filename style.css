@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(80deg, #f0c27b, #4b1248);
+  color: white;
+  font-family: "Lato", sans-serif;
+  min-height: 100vh;
+}
+
+header {
+  font-size: 1.5rem;
+  padding-top: 2rem;
+}
+
+header,
+form {
+  min-height: 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#date {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  background: cornsilk;
+  border: none;
+}
+
+form button {
+  background: cornsilk;
+  color: #4b1248;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+form button:hover {
+  background: #4b1248;
+  color: cornsilk;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.list {
+  min-width: 30%;
+  list-style: none;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: cornsilk;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.4s ease;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.remove-btn,
+.complete-btn {
+  background: #4b1248;
+  color: cornsilk;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 0.4rem;
+}
+
+.complete-btn {
+  background: rgb(80, 146, 80);
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.item {
+  padding-left: 0.5rem;
+}
+
+.done {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+.remove {
+  transform: translateY(6rem) rotateZ(20deg);
+  opacity: 0;
+}
